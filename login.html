@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Coffee Shop</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+         function loginValidation() {
+            var em = document.myform.email.value;
+            var password = document.myform.password.value;
+             if(em==null || em=="") {
+               alert("Name cant be blank");
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters");
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1><centre>Login</centre></h1>
+            <p>Please login to continue</p>
+            <form name="myform" id="loginform" action="video.html" onsubmit="return loginValidation(this)">
+                <label for="email" class="text">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password" class="text">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <!--<script src="script.js"></script>-->
+</body>
+</html>

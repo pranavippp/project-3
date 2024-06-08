@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    background-image: url("bglogin.jpg");
+}
+/* Smart phone */
+@media screen and (min-width: 320px) {
+    body {
+        background-image: url("bglogin.jpg");
+    }
+}
+
+/* Tablet, iPad */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url("bglogin.jpg");
+    }
+}
+
+/* Desktops and Laptops */
+@media screen and (min-width: 1224px) {
+    body {
+        background-image: url("bglogin.jpg");
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1824px) {
+    body {
+        background-image: url("bglogin.jpg");
+    }
+}
+
+.login-container {
+    background: rgb(244, 240, 240);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(97, 94, 94, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h1 {
+    padding-left: 1%;
+    padding-top: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: brown;
+}
+
+.login-box p {
+    margin-bottom: 30px;
+    font-size: 1em;
+    color: brown;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f7b731;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #d9d963;
+}
+.text{
+    color: brown;
+}
